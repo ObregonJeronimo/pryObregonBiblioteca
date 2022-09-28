@@ -25,7 +25,7 @@ namespace pryObregonBiblioteca
         int Indice = 0;
         private void frmBiblioteca_Load(object sender, EventArgs e)
         {
-            StreamReader objLector = new StreamReader("./Libro.txt");
+            StreamReader objLector = new StreamReader("./LIBRO.txt");
 
             int indice = 0;
 
@@ -43,7 +43,7 @@ namespace pryObregonBiblioteca
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            StreamReader Lector = new StreamReader("./Libro.txt");
+            StreamReader Lector = new StreamReader("./LIBRO.txt");
 
 
 
