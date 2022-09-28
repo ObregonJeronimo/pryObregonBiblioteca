@@ -183,7 +183,7 @@
             this.Controls.Add(this.lblCodigoEditorial);
             this.Controls.Add(this.lblCodigo);
             this.Name = "frmBiblioteca";
-            this.Text = "frmBiblioteca";
+            this.Text = "Biblioteca";
             this.Load += new System.EventHandler(this.frmBiblioteca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
