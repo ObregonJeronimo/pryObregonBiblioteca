@@ -13,32 +13,108 @@ namespace pryObregonBiblioteca
 {
     public partial class frmBiblioteca : Form
     {
+
+        public string[] baseLibro = new string[21];
+
+
         public frmBiblioteca()
         {
             InitializeComponent();
         }
 
+        int Indice = 0;
         private void frmBiblioteca_Load(object sender, EventArgs e)
         {
+            StreamReader objLector = new StreamReader("./Libro.txt");
 
-            StreamReader Readbook = new StreamReader("./Libro.txt");
+            int indice = 0;
 
-            string[] vecLibros = new string[20];
-
-            int i = 0; //índice
-
-            while (!Readbook.EndOfStream)
+            while (!objLector.EndOfStream)
             {
-                //lee los nombres de los libros escritos en el .txt
 
-                vecLibros[i] = Readbook.ReadLine();
+                baseLibro[indice] = objLector.ReadLine();
 
-                lstNombreLibro.Items.Add(vecLibros[i]);
 
-                i++;
+                indice++;
+            }
+
+            objLector.Close();
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            StreamReader Lector = new StreamReader("./Libro.txt");
+
+
+
+            string TextoCodigo = Lector.ReadLine();
+
+
+
+
+            if (Indice < baseLibro.Length && baseLibro[Indice] != null)
+            {
+
+                lstNombre.Items.Clear();
+                lstNombre.Items.Add(baseLibro[Indice].Substring(3, 20));
+
+                lstCodigo.Items.Clear();
+                lstCodigo.Items.Add(baseLibro[Indice].Substring(0, 2));
+
+
+
+                //    switch (txtCodigoEdit.Text)
+                {
+                    //      case "1":
+                    //           txtCodigoEdit.Text = "PRENTICE HALL";
+                    //       break;
+
+                    //case "2":
+                    //txtCodigoEdit.Text = "CUSPIDE";
+                    //break;
+
+                    //case "3":
+                    //txtCodigoEdit.Text = "RAMA";
+                    //break;
+
+                    //case "4":
+                    //txtCodigoEdit.Text = "MAC GRAW HILL";
+                    //break;
+
+                    //case "5":
+                    //txtCodigoEdit.Text = "ANAY MULTIMEDIA";
+                    //break;
+
+                    //case "6":
+                    //txtCodigoEdit.Text = "PEUSER";
+                    //break;
+
+                    //case "7":
+                    //txtCodigoEdit.Text = "COLOMBO";
+                    //break;
+
+                }
+
+
+
+                Indice++;
+            }
+            Lector.Close();
+
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Indice--;
+            if (Indice < baseLibro.Length && baseLibro[Indice] != null)
+            {
+                lstNombre.Items.Clear();
+                lstNombre.Items.Add(baseLibro[Indice].Substring(3, 19));
 
             }
-            Readbook.Close();
         }
     }
 }
+
+
+

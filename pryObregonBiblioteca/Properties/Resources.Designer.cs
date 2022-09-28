@@ -63,6 +63,16 @@ namespace pryObregonBiblioteca.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6cecf1_5412c9114e9048a1b291795621a016fe_mv2 {
+            get {
+                object obj = ResourceManager.GetObject("6cecf1_5412c9114e9048a1b291795621a016fe_mv2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap biblioteca2 {
             get {
                 object obj = ResourceManager.GetObject("biblioteca2", resourceCulture);
@@ -73,9 +83,29 @@ namespace pryObregonBiblioteca.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Books_Free_PNG_Image {
+            get {
+                object obj = ResourceManager.GetObject("Books-Free-PNG-Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gatito_pasando_pagina {
             get {
                 object obj = ResourceManager.GetObject("gatito pasando pagina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HD_wallpaper_colorful_stripes_library_designs_mate {
+            get {
+                object obj = ResourceManager.GetObject("HD-wallpaper-colorful-stripes-library-designs-mate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

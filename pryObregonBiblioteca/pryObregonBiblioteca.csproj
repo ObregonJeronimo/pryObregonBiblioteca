@@ -95,5 +95,14 @@
   <ItemGroup>
     <None Include="Resources\gatito pasando pagina.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-colorful-stripes-library-designs-mate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books-Free-PNG-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6cecf1_5412c9114e9048a1b291795621a016fe_mv2.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,11 @@ namespace pryObregonBiblioteca
         {
             InitializeComponent();
         }
+
+        private void bibliotecaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBiblioteca frm = new frmBiblioteca();
+            frm.ShowDialog();
+        }
     }
 }
